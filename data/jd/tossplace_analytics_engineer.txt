@@ -1,0 +1,20 @@
+회사: 토스플레이스
+직무: Data Analytics Engineer
+경력: 경력무관 / 정규직
+게시일: 2026-04-16
+마감: 상시채용
+URL: https://zighang.com/recruitment/8d1deef2-1a27-4cdc-b734-178a26c731f2
+
+[주요업무]
+- 데이터 정책 및 원칙 수립
+- Snowflake, DBT, Airflow 기반 표준 데이터 제공
+- 고품질 데이터 관리 체계 구축
+- 데이터 모델 리뷰 및 분석 관점 데이터 제안
+
+[자격요건]
+- Snowflake, dbt, Airflow 실무 경험
+- 데이터 구조 설계 및 정합성 검증
+
+[도메인]
+핀테크, 결제
+[판정] 현재 스킬 갭 큼 → 30일 후 재검토

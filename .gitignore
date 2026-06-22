@@ -1,34 +1,12 @@
-# Python
 __pycache__/
 *.py[cod]
-*$py.class
 .venv/
 venv/
-env/
 .env
-*.egg-info/
-
-# Jupyter
 .ipynb_checkpoints/
-*.ipynb_checkpoints
-
-# OS
 .DS_Store
-Thumbs.db
-
-# IDE
 .vscode/
-.idea/
-
-# Claude / API keys
-.anthropic_key
 *.secret
-config.local.*
-
-# Data (큰 파일·민감 데이터 보호)
 data/raw/*.csv
 data/raw/*.parquet
 !data/raw/.gitkeep
-
-# Outputs (자동 생성물 일부만 추적)
-outputs/daily/*.json

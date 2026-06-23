@@ -1,0 +1,17 @@
+# Module A · 스킬 사전 (스텁)
+# 실제 보강은 Day 12 세션(빌드 가이드 §8)에서 unknown_terms 루프로 채운다.
+# 카테고리 6개: language, bi_tool, ml_library, cloud, infra, domain
+skills:
+  - name: "Python"
+    aliases: ["파이썬", "python"]
+    category: "language"
+  - name: "SQL"
+    aliases: ["sql", "쿼리"]
+    category: "language"
+  - name: "R"
+    aliases: ["r"]
+    category: "language"
+  - name: "Tableau"
+    aliases: ["태블로", "tableau"]
+    category: "bi_tool"
+  # ... Day 12 세션에서 확장

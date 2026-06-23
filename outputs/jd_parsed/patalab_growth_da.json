@@ -1,0 +1,18 @@
+{
+  "company": "페이타랩 (패스오더)",
+  "position": "데이터 분석가 (그로스해커)",
+  "required": [
+    "퍼널 분석, 리텐션 분석, A/B 테스트 경험",
+    "SQL, Python"
+  ],
+  "preferred": [],
+  "tools": [
+    "SQL",
+    "Python"
+  ],
+  "domain": [
+    "O2O",
+    "카페주문 플랫폼"
+  ],
+  "experience": "10년 이하"
+}

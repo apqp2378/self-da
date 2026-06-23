@@ -1,0 +1,17 @@
+{
+  "company": "코드잇",
+  "position": "데이터 분석가 인턴",
+  "required": [
+    "Python 기반 데이터 분석 역량",
+    "통계 지식"
+  ],
+  "preferred": [],
+  "tools": [
+    "Python"
+  ],
+  "domain": [
+    "EdTech",
+    "SaaS"
+  ],
+  "experience": "신입"
+}

@@ -1,0 +1,19 @@
+{
+  "company": "토스플레이스",
+  "position": "Data Analytics Engineer",
+  "required": [
+    "Snowflake, dbt, Airflow 실무 경험",
+    "데이터 구조 설계 및 정합성 검증"
+  ],
+  "preferred": [],
+  "tools": [
+    "Snowflake",
+    "dbt",
+    "Airflow"
+  ],
+  "domain": [
+    "핀테크",
+    "결제"
+  ],
+  "experience": "경력무관"
+}

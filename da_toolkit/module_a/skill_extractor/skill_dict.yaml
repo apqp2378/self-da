@@ -1,17 +1,149 @@
-# Module A · 스킬 사전 (스텁)
-# 실제 보강은 Day 12 세션(빌드 가이드 §8)에서 unknown_terms 루프로 채운다.
+# Module A · 스킬 사전
+# 근거: 업로드 취업 자료(데이터분석가_실무백서, 데이터 분석 공채 핵심 전략, 직무 이해 답변,
+#        현직 이력서 모음) + 일반 DA JD 통념.
 # 카테고리 6개: language, bi_tool, ml_library, cloud, infra, domain
+# unknown_terms 루프(Day 12)로 계속 보강한다. 빈도는 절대 점수가 아닌 상대 비교 자료(원칙 7).
 skills:
+  # ---- language ----
   - name: "Python"
     aliases: ["파이썬", "python"]
     category: "language"
   - name: "SQL"
-    aliases: ["sql", "쿼리"]
+    aliases: ["sql", "쿼리", "query"]
     category: "language"
   - name: "R"
     aliases: ["r"]
     category: "language"
+
+  # ---- bi_tool ----
   - name: "Tableau"
     aliases: ["태블로", "tableau"]
     category: "bi_tool"
-  # ... Day 12 세션에서 확장
+  - name: "Power BI"
+    aliases: ["파워비아이", "powerbi", "power bi"]
+    category: "bi_tool"
+  - name: "Looker"
+    aliases: ["루커", "looker", "looker studio", "data studio", "데이터스튜디오"]
+    category: "bi_tool"
+  - name: "Excel"
+    aliases: ["엑셀", "excel", "스프레드시트", "spreadsheet"]
+    category: "bi_tool"
+  - name: "Redash"
+    aliases: ["리대시", "redash"]
+    category: "bi_tool"
+  - name: "Superset"
+    aliases: ["superset", "슈퍼셋"]
+    category: "bi_tool"
+  - name: "Google Analytics"
+    aliases: ["ga", "구글애널리틱스", "google analytics", "ga4"]
+    category: "bi_tool"
+
+  # ---- ml_library ----
+  - name: "pandas"
+    aliases: ["판다스", "pandas"]
+    category: "ml_library"
+  - name: "NumPy"
+    aliases: ["numpy", "넘파이"]
+    category: "ml_library"
+  - name: "scikit-learn"
+    aliases: ["sklearn", "scikit-learn", "사이킷런"]
+    category: "ml_library"
+  - name: "statsmodels"
+    aliases: ["statsmodels"]
+    category: "ml_library"
+  - name: "XGBoost"
+    aliases: ["xgboost", "lightgbm", "gbm"]
+    category: "ml_library"
+  - name: "TensorFlow"
+    aliases: ["tensorflow", "텐서플로"]
+    category: "ml_library"
+  - name: "PyTorch"
+    aliases: ["pytorch", "파이토치"]
+    category: "ml_library"
+
+  # ---- cloud ----
+  - name: "AWS"
+    aliases: ["aws", "아마존웹서비스"]
+    category: "cloud"
+  - name: "GCP"
+    aliases: ["gcp", "google cloud", "구글클라우드"]
+    category: "cloud"
+  - name: "Azure"
+    aliases: ["azure", "애저"]
+    category: "cloud"
+  - name: "BigQuery"
+    aliases: ["bigquery", "빅쿼리"]
+    category: "cloud"
+  - name: "Redshift"
+    aliases: ["redshift", "레드시프트"]
+    category: "cloud"
+  - name: "Snowflake"
+    aliases: ["snowflake", "스노우플레이크"]
+    category: "cloud"
+
+  # ---- infra ----
+  - name: "Airflow"
+    aliases: ["airflow", "에어플로우"]
+    category: "infra"
+  - name: "dbt"
+    aliases: ["dbt"]
+    category: "infra"
+  - name: "Spark"
+    aliases: ["spark", "스파크", "pyspark"]
+    category: "infra"
+  - name: "Kafka"
+    aliases: ["kafka", "카프카"]
+    category: "infra"
+  - name: "Hadoop"
+    aliases: ["hadoop", "하둡"]
+    category: "infra"
+  - name: "Docker"
+    aliases: ["docker", "도커"]
+    category: "infra"
+  - name: "Git"
+    aliases: ["git", "github", "깃", "깃허브"]
+    category: "infra"
+
+  # ---- domain (분석 개념·도메인 키워드) ----
+  - name: "A/B 테스트"
+    aliases: ["a/b test", "ab test", "에이비테스트", "ab테스트", "실험설계"]
+    category: "domain"
+  - name: "퍼널 분석"
+    aliases: ["funnel", "퍼널", "전환퍼널"]
+    category: "domain"
+  - name: "리텐션"
+    aliases: ["retention", "리텐션", "재방문", "잔존율"]
+    category: "domain"
+  - name: "코호트 분석"
+    aliases: ["cohort", "코호트"]
+    category: "domain"
+  - name: "전환율"
+    aliases: ["conversion", "전환율", "cvr"]
+    category: "domain"
+  - name: "LTV"
+    aliases: ["ltv", "생애가치", "고객생애가치"]
+    category: "domain"
+  - name: "이탈 분석"
+    aliases: ["churn", "이탈", "이탈률"]
+    category: "domain"
+  - name: "세그먼트"
+    aliases: ["segment", "세그먼트", "세분화", "rfm"]
+    category: "domain"
+  - name: "추천시스템"
+    aliases: ["recsys", "추천", "추천시스템", "recommendation"]
+    category: "domain"
+  - name: "그로스해킹"
+    aliases: ["growth", "그로스", "그로스해킹", "growth hacking"]
+    category: "domain"
+  - name: "가설검정"
+    aliases: ["가설검정", "t-test", "카이제곱", "p-value", "통계검정", "유의성"]
+    category: "domain"
+  - name: "회귀분석"
+    aliases: ["regression", "회귀", "로지스틱회귀", "logistic"]
+    category: "domain"
+  - name: "군집분석"
+    aliases: ["clustering", "군집", "클러스터링", "kmeans"]
+    category: "domain"
+  - name: "시계열"
+    aliases: ["time series", "시계열", "예측", "forecasting"]
+    category: "domain"

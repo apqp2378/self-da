@@ -1,8 +1,13 @@
-"""Module A · Phase 3 토픽 분류 — jd_clean → 토픽.
+"""Module A · 검증(EDA) — BERTopic 일치도 점검. (파이프라인 단계 아님)
 
-스텁. 실제 구현은 Day 11 세션(빌드 가이드 §7)에서 채운다.
+[강등 2026-06-24] 파이프라인 토픽 축은 classifier/rule_classify.py(규칙 기반)로 간다.
+이 파일은 폐기하지 않고 **일회성 검증 도구**로 남긴다:
+규칙 라벨과 BERTopic 비지도 클러스터의 일치도를 점검하고 그 근거를 decision_log에 기록한다
+(포트폴리오·면접 서사용). Module B 입력은 규칙 라벨이며 이 모듈에 의존하지 않는다.
+
+스텁. 구현은 분류 라벨이 나온 뒤 Day 13/여유 시 진행한다.
 - BERTopic 학습 자체에 LLM 호출하지 않는다 (원칙 6). LLM은 라벨링 검수에만.
-- outlier(-1)를 강제로 제거하지 않는다. 분류 못 한 JD는 unknown으로 둔다 (원칙 7).
+- outlier(-1)를 강제로 제거하지 않는다 (원칙 7).
 - random_state 고정 (재현성).
 """
 from __future__ import annotations

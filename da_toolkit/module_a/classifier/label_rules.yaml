@@ -1,0 +1,57 @@
+# Module A · 규칙 기반 분류 설정 (Phase 3)
+# 근거: docs/domain_taxonomy.md §3 매핑 표. 본 설정은 운영 보조 지표다 (원칙 7).
+# 사람이 최종 검수한다. 매핑 안 되는 JD는 unknown으로 남긴다.
+#
+# Day 11 세션에서 키워드를 보강한다. 아래는 taxonomy에서 역산한 seed 값.
+
+# 1) industry 원문 표기 → taxonomy 표준 도메인 (수집 표기 흔들림 흡수)
+industry_normalize:
+  이커머스: 이커머스
+  커머스: 이커머스
+  e-commerce: 이커머스
+  핀테크: 핀테크/금융
+  금융: 핀테크/금융
+  마케팅: 마케팅
+  광고: 마케팅
+  게임: 게임
+  물류: 물류/공급망
+  공급망: 물류/공급망
+  헬스케어: 헬스케어/의료
+  의료: 헬스케어/의료
+  교육: 교육(EdTech)
+  edtech: 교육(EdTech)
+  hr: HR/People
+  제조: 제조
+  공공: 공공/정책
+
+# 2) 라벨 후보. (도메인 + 본문 키워드) 조건이 맞으면 해당 라벨 부여.
+#    priority 낮을수록 먼저 검사. North Star(이커머스 그로스) 1순위로 정렬.
+labels:
+  - name: 이커머스 그로스 분석
+    priority: 1
+    domains: [이커머스]
+    job_category_any: [product, business, 프로덕트, 비즈니스, 그로스]
+    body_keywords_any: [전환율, 리텐션, 재구매, 퍼널, 장바구니, 코호트, AB테스트, A/B]
+  - name: 마케팅·캠페인 분석
+    priority: 2
+    domains: [마케팅]
+    job_category_any: [marketing, 마케팅, 퍼포먼스]
+    body_keywords_any: [캠페인, 유입, LTV, ROAS, 광고, 어트리뷰션]
+  - name: 플랫폼 BI·지표 운영
+    priority: 3
+    domains: [이커머스, 물류/공급망, 핀테크/금융]
+    job_category_any: [business, operations, 운영, BI]
+    body_keywords_any: [대시보드, 지표, KPI, Tableau, Looker, 리포트, 모니터링]
+  - name: 인하우스 리서치
+    priority: 4
+    domains: [핀테크/금융, HR/People, 공공/정책]
+    job_category_any: [financial, hr, research, 리서치]
+    body_keywords_any: [리서치, 가설검정, 통계, 설문, 모델링]
+  - name: 스타트업 제너럴 분석
+    priority: 5
+    domains: []   # 도메인 무관 — 소규모 조직/횡단 신호로 폴백
+    job_category_any: [generalist, 제너럴]
+    body_keywords_any: [전반, 다양한, 엔드투엔드, 0to1, 직접]
+
+# 3) 어느 라벨에도 안 걸리면:
+fallback_label: unknown

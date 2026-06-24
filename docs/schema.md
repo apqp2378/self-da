@@ -41,5 +41,6 @@ frontmatter(스칼라 메타) + 본문(고정 헤더 3섹션) 구조.
 - 중복은 삭제하지 않고 `is_duplicate`로 표시한다.
 - 필수 frontmatter(company, title, posted_date, source_url) 누락 또는 파일명 패턴 위반 시 `JDParseError`.
 
-## jd_clean (Phase 2) — Day 10에서 정의
-## jd_skill_long (Phase 4) — Day 12에서 정의
+## jd_clean (Phase 2 전처리 출력)
+
+분석 단위: **JD 1건 = 1행** (jd_raw 행 수 불변)
